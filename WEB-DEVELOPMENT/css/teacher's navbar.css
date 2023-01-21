@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: dodgerblue;
+}
+.nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+.icon{
+    display: none;
+    margin-right: 50px;
+}
+.icon div{
+    width: 30px;
+    background-color: white;
+    height: 3px;
+    margin: 5px;
+}
+@media screen and (max-width:1024px){
+    nav{
+        align-items: center;
+        width: 100%;
+    }
+    .nav ul li{
+        margin-right: 25px;
+    }
+    .logo{
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width:500px){
+    body{
+        overflow-x: hidden;
+    }
+    .navlinks{
+        position: absolute;
+        right: 0;
+        height: 22vh;
+        background-color: dodgerblue;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .logo{
+        margin-left: 80px;
+    }
+    .nav-links li{
+        margin-left: 30px;
+    }
+    .icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}

@@ -1,0 +1,122 @@
+:root{
+    /* primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --fs-p: 18px;
+    --ff: 'Outfit', sans-serif;
+    --fw: 300;
+    --fw1: 400;
+    --fw2: 600;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Outfit', sans-serif;
+}
+body{
+    background-color: var(--Very-dark-blue-main-BG);
+    display: flex;
+}
+.wrapper{
+    box-sizing: border-box;
+    display: flex;
+    background-color: var(--Very-dark-blue-card-BG);
+    flex-direction: column;
+    margin-left: 37%;
+    margin-top: 45px;
+    border-radius: 10px;
+    width: 350px;
+}
+.background{
+    position: relative;
+}
+.background img{
+    width: 318px;
+    height: 318px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-radius: 25px;
+}
+.text h2{
+    color: var(--White);
+    justify-content: left;
+    align-items: left;
+    padding-left: 20px;
+    margin-top: 8px;
+    font-weight: var(--fw2);
+}
+.text h2:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.text > p{
+    color: var(--Soft-blue);
+    font-size: var(--fs-p);
+    font-weight: var(--fw);
+    padding: 14px 20px 6px 20px;
+    letter-spacing: .5px;
+}
+.span{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 20px 20px;
+}
+.inside-div{
+    display: flex;
+}
+.inside-div p{
+    margin-left: 10px;
+    color: var(--Cyan);
+}
+.left-div{
+   display: flex;
+}
+.left-div p{
+    margin-left: 10px;
+    color: var(--Soft-blue);
+}
+hr{
+    width: 304px;
+    margin-left: 22px;
+    background-color: var(--Soft-blue);
+    /* margin-bottom: 0px; */
+    height: .3px;
+    border: none;
+    opacity: .5;
+}
+.bottom{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.bottom p{
+    color: var(--Soft-blue);
+    margin-left: 20px;
+    font-size: var(--fs-p);
+}
+span{
+    color: var(--White);
+}
+span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.circle img{
+    width: 40px;
+}
+.circle{
+    width: 42px;
+    height: 42px;
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 21px ;
+}

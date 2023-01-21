@@ -1,0 +1,291 @@
+:root{
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 90%;
+    height: 10.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'open-sans', sans-serif;
+}
+nav img{
+    /* height: 42px; */
+    width: 9.75rem;
+    margin-left: .5rem;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 3.25rem;
+    font-size: 1.04rem;
+    color: var(--Desaturated-Blue);
+}
+section.one{
+    height: 32rem;
+    display: flex;
+    gap: 4.1rem;
+    padding: 0 4.63rem;
+}
+div.text-wrapper{
+    padding-top: 90px;
+}
+section.one div.text-wrapper h1{
+    font-size: 2.28rem;
+    font-family: 'raleway', sans-serif;
+    color: var(--Very-Dark-Blue);
+    line-height: 1.4;
+    margin-bottom: 0.95rem;
+    font-weight: 700;
+}
+section.one div.text-wrapper p{
+    font-family: 'open-sans', sans-serif;
+    font-size: 1.09rem;
+    color: var(--Desaturated-Blue);
+    line-height: 1.2;
+    margin-bottom: 1.63rem;
+}
+div.svg-1 img{
+    width: 37.5rem;
+}
+form{
+    font-family: 'raleway',sans-serif;
+}
+input.email-1{
+    width: 18.75rem;
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid black;
+    outline: none;
+}
+::placeholder{
+    color: var(--Light-Gray);
+}
+button.btn-1{
+    width: 11.56rem;
+    height: 2.5rem;
+    background-color: var(--Bright-Blue);
+    border: none;
+    outline: none;
+    color: var(--Light-Grayish-Blue);
+    margin-left: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 6px 8px rgb(226, 225, 225);
+}
+button.btn-1:hover{
+    background-color: var(--Bright-Blue);
+    opacity: .7;
+    transition: .5s ease-in;
+}
+section.one + img{
+    margin-bottom: -4px;
+}
+section.two{
+    background-color: var(--Light-Grayish-Blue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 4.1rem;
+    padding: 0 4.63rem;
+    box-sizing: border-box;
+}
+section.two .text-wrapper-2 > h1{
+    font-size: 2.28rem;
+    font-family: 'raleway', sans-serif;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+}
+section.two div.text-wrapper-2 > p{
+    font-family: 'open-sans', sans-serif;
+    font-size: .95rem;
+    color: var(--Desaturated-Blue);
+    line-height: 1.2;
+    margin-bottom: 1.56rem;
+}
+section.two div.text-wrapper-2 > a{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: center;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--Moderate-Cyan);
+    font-family: 'raleway', sans-serif;
+    font-size: .96rem;
+    color: var(--Moderate-Cyan);
+    width: 11rem;
+}
+section.two div.text-wrapper-2 > a:hover{
+    color: var(--Moderate-Cyan);
+    opacity: .7;
+}
+div.testimonials{
+    background-color: var(--Light-Grayish-Blue);
+    box-shadow: 5px 10px 20px rgb(225, 224, 224);
+    width: 20.94rem;
+    border-radius: 7px;
+    padding: 20px;
+    padding-left: 1.86rem;
+    box-sizing: border-box;
+    margin-top: 2.56rem;
+}
+div.testimonials > img{
+    display: block;
+}
+div.testimonials > small{
+    font-family: 'open-sans', sans-serif;
+    color: var(--Desaturated-Blue);
+    line-height: 1.4;
+    letter-spacing: .4px;
+}
+div.testimonials > .photo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 15px;
+}
+div.testimonials > .photo img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+div.testimonials > .photo p{
+    font-size: .65rem;
+    font-family: 'open-sans', sans-serif;
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+}
+div.testimonials > .photo p span{
+    color: var(--Desaturated-Blue);
+    font-weight: 400;
+    font-size: .6rem;
+}
+div.svg-2 img{
+    width: 32.5rem;
+}
+section.three{
+    width: 100%;
+    height: 45.5vh;
+    padding: 6.56rem 4.63rem 4.69rem;
+    background-color: var(--Desaturated-Blue);
+    box-sizing: border-box;
+    display: flex;
+    gap: 11rem;
+}
+section.three .text-wrapper-3 h2{
+    font-size: 1.8rem;
+    font-family: 'raleway', sans-serif;
+    color: var(--Light-Grayish-Blue);
+    margin-bottom: 1.5rem;
+}
+section.three .text-wrapper-3 p{
+    font-family: 'Open-sans', sans-serif;
+    font-size: .95rem;
+    color: var(--Light-Grayish-Blue);
+    line-height: 1.5;
+    letter-spacing: .7px;
+    margin-bottom: 1.56rem;
+}
+div.form input{
+    width: 450px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+div.form button{
+    width: 11.56rem;
+    height: 2.5rem;
+    background-color: var(--Bright-Blue);
+    border: none;
+    outline: none;
+    color: var(--Light-Grayish-Blue);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    box-shadow: 2px 2px 5px rgb(77, 77, 77);
+}
+div.form button:hover{
+    background-color: var(--Bright-Blue);
+    opacity: .7;
+    transition: .5s ease-in;
+}
+section.four{
+    width: 100%;
+    box-sizing: border-box;
+    height: 54.5vh;
+    background-color: var(--Very-Dark-Blue);
+    color: var(--Light-Gray);
+    padding: 5.63rem 1.9rem 0 4.63rem;
+    font-family: 'releway', sans-serif;
+}
+section.four > img{
+    width: 120px;
+    margin-bottom: 25px;
+}
+div.one div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+.list{
+    display: flex;
+    gap: 12rem;
+}
+div.list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+div.list ul li a{
+    text-decoration: none;
+    color: var(--Light-Gray);
+}
+div.list ul li a:hover{
+    color: var(--Desaturated-Blue);
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
+.icons svg{
+    width: 13px;
+    cursor: pointer;
+}
+.icons .icon-item:nth-child(2) svg{
+    width: 9px;
+}
+.icon-item{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Light-Gray);
+    border-radius: 25px;
+    cursor: pointer;
+}
+.icon-item:hover{
+    border-color: var(--Bright-Blue);
+}

@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #23242a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.placeholder{
+    background-color: #1c1c1c;
+    width: 380px;
+    height: 420px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.placeholder::before{
+    background: linear-gradient(to top, transparent, #45f3ff, #45f3ff);
+    width: 380px;
+    height: 420px;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    content: '';
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+}
+.placeholder::after{
+    background: linear-gradient(to top, transparent, #45f3ff, #45f3ff);
+    width: 380px;
+    height: 420px;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    content: '';
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+    transform-origin: bottom right;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.form{
+    position: absolute;
+    background-color: #28292d;
+    inset: 2px;
+    z-index: 10;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.form h2{
+    text-align: center;
+    font-weight: 500;
+    color: #45f3ff;
+    letter-spacing: 0.05em;
+}
+.hold{
+    margin-top: 36px;
+    position: relative;
+}
+.hold input{
+    width: 100%;
+    padding: 25px 0px 10px;
+    background: transparent;
+    outline: 0;
+    border: none;
+    position: relative;
+    z-index: 9;
+    font-size: 1em;
+    text-indent: 10px;
+}
+.hold span{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    color: #8f8f8f;
+    transition: 0.5s;
+}
+.hold i{
+    background-color: #45f3ff;
+    height: 2px;
+    width: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.hold input:valid ~ span , .hold input:focus ~ span{
+    transform: translateY(-30px);
+    font-size: 0.75em;
+    color: #45f3ff;
+}
+.hold input:valid ~ i , .hold input:focus ~i{
+    height: 44px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.links a{
+    text-decoration: none;
+    color: #8f8f8f;
+    font-size: 0.75em;
+}
+.links a:hover, .links a:last-child{
+    color: #45f3ff;
+}
+input[type="submit"]{
+    padding: 10px 25px;
+    width: 100px;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #45f3ff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navbar</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:20px;
+    background-color:dodgerblue;
+}
+
+.navlinks li{
+    display:inline-block;
+    margin-left:10px;
+}
+
+nav .navlinks li a{
+    color:#fff;
+}
+
+.brand{
+    font-weight:bold;
+    color:#fff;
+    letter-spacing:1px;
+    font-size:30px;
+}
+.toggle-icon{
+    width:20px;
+    height:20px;
+    background-color:#fff;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width:576px){
+    nav{
+        position: relative;
+    }
+    .navlinks{
+        position:absolute;
+        top:100%;
+        left:0;
+        background-color: dodgerblue;
+        width:100%;
+        display:none;
+    }
+    .show{
+        display: block;
+    }
+    nav .navlinks li{
+    display:block;
+    margin:10px 20px;
+    }
+    .toggle-icon{
+        display:block;
+    }
+}
+</style>
+</head>
+<body>
+    <!-- top navbar -->
+    <nav>
+        <!-- brand -->
+        <a href="#"><h3 class="brand">Responsive</h3></a>
+        <!-- navlinks -->
+        <ul class="navlinks">
+            <li><a href="">Home</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li> 
+        </ul>
+
+        <!-- toggle icon -->
+        <div class="toggle-icon" onclick="toggleNavbar()">
+        </div>
+    </nav>
+
+<script>
+    let navLinks = document.querySelector('.navlinks');
+    let toggleIcon = document.querySelector('.toggle-icon');
+
+    function toggleNavbar()
+    {
+        navLinks.classList.toggle('show')
+    }
+
+</script>
+</body>
+</html>

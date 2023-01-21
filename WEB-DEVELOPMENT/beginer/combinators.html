@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        div p{
+            color: red;
+        }
+        div > p{
+            font-size: 20px;
+            color: green;
+        }
+        div + p{
+            text-decoration: underline ;
+            font-weight: bold;
+        }
+        div ~ p{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Inside a div element</p>
+        <p>Also inside a div</p>
+        <section>
+            <p>inside a section</p>
+            <p>i'm inside a section with the first paragragh</p>
+            <main>
+                <p>inside a main</p>
+            </main>
+        </section>
+        <aside>
+            <p>inside an aside element</p>
+        </aside>
+        <p>after aside elemement</p>
+    </div>
+    <p>after div element</p>
+    <p>after our ancestors</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolor et iusto odio nostrum magni, temporibus quas rerum voluptate. Repudiandae blanditiis atque quos id, similique ab consequuntur odio nam est?</p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>What can javascript do</h2>
+   <p id="demo">javascript can change html contents</p>
+   <button type="button" onclick='document.getElementById("demo").innerHTML="Hello javascript!"'>Click me</button>
+   <h2>What javascript can Do?</h2>
+   <p>javascript can change HTML attribute values.</p>
+   <p>In this case javascript changes the value of the src(source) attribute of an image.</p>
+   <button onclick="document.getElementById('my image').src='./bussiness card.jpg'">Turn on the Light</button> 
+   <img id="my image" src="./bussiness card.jpg" style="width: 100px;">
+   <button onclick="document.getElementById('my image').style.display='none' src='./business card.jpg'">Turn off the Light</button>
+   <button type="button"onclick="document.getElementById('demo').style.display='none'">don't click me</button>
+</body>
+</html>
